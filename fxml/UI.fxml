@@ -28,7 +28,7 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button layoutX="835.0" layoutY="500.0" mnemonicParsing="false" text="Nächster Spieler" AnchorPane.bottomAnchor="48.0" AnchorPane.rightAnchor="65.0" />
+                        <Button layoutX="835.0" layoutY="500.0" mnemonicParsing="false" text="Nächster Spieler" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="65.0" />
                      </children>
                   </AnchorPane>
               </content>
@@ -40,7 +40,10 @@
             </Tab>
           <Tab text="Einkauf">
                <content>
-                  <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="849.0" layoutY="510.0" mnemonicParsing="false" text="Einkaufen" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="65.0" />
+                     </children></AnchorPane>
                </content>
             </Tab>
             <Tab text="Verkauf">
