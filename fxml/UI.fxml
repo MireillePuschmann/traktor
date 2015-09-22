@@ -30,7 +30,7 @@
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
                         <Button layoutX="835.0" layoutY="500.0" mnemonicParsing="false" text="Nächster Spieler" AnchorPane.bottomAnchor="50.0" AnchorPane.rightAnchor="65.0" />
-                        <GridPane layoutX="249.0" layoutY="191.0" prefHeight="206.0" prefWidth="479.0" AnchorPane.leftAnchor="249.0" AnchorPane.rightAnchor="249.0" AnchorPane.topAnchor="191.0">
+                        <GridPane layoutX="249.0" layoutY="191.0" prefHeight="257.0" prefWidth="394.0" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="35.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -39,12 +39,18 @@
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
                               <Label text="Eigenkapital" />
                               <Label text="Fremdkapital" GridPane.rowIndex="1" />
                               <TextField editable="false" prefHeight="6.0" prefWidth="145.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                               <TextField editable="false" GridPane.columnIndex="1" />
+                              <TextField editable="false" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label text="Einnahmen" GridPane.rowIndex="2" />
+                              <Label text="Ausgaben" GridPane.rowIndex="3" />
+                              <TextField editable="false" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                            </children>
                         </GridPane>
                      </children>
@@ -55,41 +61,48 @@
                <content>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <GridPane layoutX="48.0" layoutY="56.0" prefHeight="211.0" prefWidth="440.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="489.0" AnchorPane.topAnchor="55.0">
+                        <GridPane layoutX="44.0" layoutY="55.0" prefHeight="274.0" prefWidth="417.0" AnchorPane.leftAnchor="44.0" AnchorPane.rightAnchor="516.0" AnchorPane.topAnchor="55.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                           </columnConstraints>
                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <TextField GridPane.columnIndex="1" />
-                              <TextField prefHeight="6.0" prefWidth="145.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                              <Label text="Fremdkapital" GridPane.rowIndex="1" />
-                              <Label text="Eigenkapital" />
-                              <Label text="Einnahmen (insgesamt)" GridPane.rowIndex="2" />
-                              <Label text="Ausgaben (insgesamt)" GridPane.rowIndex="3" />
-                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField prefHeight="6.0" prefWidth="145.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label text="Fremdkapital" GridPane.rowIndex="2" />
+                              <Label text="Eigenkapital" GridPane.rowIndex="1" />
+                              <Label text="Einnahmen (insgesamt)" GridPane.rowIndex="3" />
+                              <Label text="Ausgaben (insgesamt)" GridPane.rowIndex="4" />
                               <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="229.0" text="Kredit aufnehmen" GridPane.rowIndex="5" />
+                              <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="233.0" text="Kredit tilgen" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label text="Finanzübersicht">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
                            </children>
                         </GridPane>
-                        <Button layoutX="615.0" layoutY="255.0" mnemonicParsing="false" text="Kredit aufnehmen" AnchorPane.rightAnchor="196.0" AnchorPane.topAnchor="188.0" />
-                        <Button layoutX="615.0" layoutY="247.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="166.0" text="Kredit tilgen" AnchorPane.rightAnchor="196.0" AnchorPane.topAnchor="247.0" />
-                        <GridPane layoutX="48.0" layoutY="267.0" prefHeight="261.0" prefWidth="443.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="489.0" AnchorPane.topAnchor="300.0">
+                        <GridPane layoutX="489.0" layoutY="55.0" prefHeight="455.0" prefWidth="438.0" AnchorPane.bottomAnchor="77.0" AnchorPane.leftAnchor="489.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="55.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                           </columnConstraints>
                           <rowConstraints>
-                              <RowConstraints maxHeight="124.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
-                            <RowConstraints maxHeight="233.0" minHeight="10.0" prefHeight="225.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="258.0" minHeight="0.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="423.0" minHeight="10.0" prefHeight="407.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <TextArea prefHeight="268.0" prefWidth="230.0" GridPane.rowIndex="1" />
+                              <TextArea prefHeight="201.0" prefWidth="219.0" GridPane.rowIndex="1" />
                               <TextArea prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                               <Label text="Einnahmen-Log" />
                               <Label text="Ausgaben-Log" GridPane.columnIndex="1" />
@@ -102,12 +115,13 @@
                <content>
                   <AnchorPane prefHeight="200.0" prefWidth="200.0">
                      <children>
-                        <GridPane layoutX="47.0" layoutY="123.0" prefHeight="230.0" prefWidth="383.0" AnchorPane.leftAnchor="47.0" AnchorPane.topAnchor="123.0">
+                        <GridPane layoutX="31.0" layoutY="35.0" prefHeight="285.0" prefWidth="383.0" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="35.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                           </columnConstraints>
                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -115,18 +129,23 @@
                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Label text="Reifen" />
-                              <Label text="Karosserieteile" GridPane.rowIndex="1" />
-                              <Label text="Motorteile" GridPane.rowIndex="2" />
-                              <Label text="Kleinteile" GridPane.rowIndex="3" />
-                              <TextField GridPane.columnIndex="1" />
+                              <Label text="Reifen" GridPane.rowIndex="1" />
+                              <Label text="Karosserieteile" GridPane.rowIndex="2" />
+                              <Label text="Motorteile" GridPane.rowIndex="3" />
+                              <Label text="Kleinteile" GridPane.rowIndex="4" />
                               <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
                               <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
                               <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                              <Button mnemonicParsing="false" text="Einkaufen" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="215.0" text="Einkaufen" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label text="Einkauf">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font>
+                              </Label>
                            </children>
                         </GridPane>
-                        <GridPane layoutX="519.0" layoutY="70.0" prefHeight="283.0" prefWidth="409.0" AnchorPane.leftAnchor="519.0" AnchorPane.topAnchor="70.0">
+                        <GridPane layoutX="519.0" layoutY="35.0" prefHeight="283.0" prefWidth="409.0" AnchorPane.rightAnchor="49.0" AnchorPane.topAnchor="35.0">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                             <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -167,33 +186,78 @@
             </Tab>
             <Tab text="Verkauf">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <GridPane layoutX="35.0" layoutY="31.0" prefHeight="194.0" prefWidth="369.0" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="35.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Verkaufspreise">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Traktor klein" GridPane.rowIndex="1" />
+                              <Label text="Traktor groß" GridPane.rowIndex="2" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="205.0" text="Preise übernehmen" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           </children>
+                        </GridPane>
+                     </children></AnchorPane>
               </content>
             </Tab>
             <Tab text="Produktion">
               <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-              </content>
-            </Tab>
-            <Tab text="Marketing">
-              <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Button layoutX="379.0" layoutY="274.0" mnemonicParsing="false" text="Werbekampagne starten" AnchorPane.bottomAnchor="274.0" AnchorPane.leftAnchor="379.0" AnchorPane.rightAnchor="378.0" AnchorPane.topAnchor="274.0" />
-                     </children></AnchorPane>
-              </content>
-            </Tab>
-            <Tab text="Forschung">
-              <content>
-                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <Button layoutX="405.0" layoutY="274.0" mnemonicParsing="false" text="Forschung starten" />
+                        <GridPane layoutX="21.0" layoutY="25.0" prefHeight="200.0" prefWidth="441.0" AnchorPane.leftAnchor="35.0" AnchorPane.topAnchor="35.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="225.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="214.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label prefHeight="27.0" prefWidth="223.0" text="Produktion der Traktoren">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Traktor klein" GridPane.rowIndex="1" />
+                              <Label text="Traktor groß" GridPane.rowIndex="2" />
+                              <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="245.0" text="herstellen" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           </children>
+                        </GridPane>
                      </children></AnchorPane>
               </content>
             </Tab>
             <Tab text="Personal">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+            <Tab text="Marketing/ Forschung">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="379.0" layoutY="274.0" mnemonicParsing="false" text="Werbekampagne starten" AnchorPane.bottomAnchor="274.0" AnchorPane.leftAnchor="379.0" AnchorPane.rightAnchor="378.0" AnchorPane.topAnchor="274.0" />
+                        <Button layoutX="406.0" layoutY="235.0" mnemonicParsing="false" text="Forschung starten" />
+                     </children></AnchorPane>
               </content>
             </Tab>
         </tabs>
