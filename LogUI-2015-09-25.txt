@@ -1,0 +1,21 @@
+UI
+Overview:
+	- Anzahl der Traktoren
+Einkauf:
+	- Aktuelle Preise
+Produktion:
+	- Produktionskapazität
+	- Maschinenanzahl bzw. kaufen
+	- Maschinen stilllegen/ aktivieren
+	- Anzahl der Traktoren
+Personal:
+	- Anzahl Mitarbeiter
+	- Button:
+	- Einstellen und entlassen
+	- Gehalt erhöhen/ senken
+	- Anzeige von maximalen Mitarbeiter möglich
+Marketing/ Forschung:
+	- Budget (groß/ mittel/ klein) (Dropdown) (zurücksetzen)
+
+Prüfen:
+	- Nächster Spieler oder Direkt anzeigen.
